@@ -2,10 +2,55 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Certifications - Parcours AZ-900</title>
-<meta http-equiv="refresh" content="0; url=Azure-3D-Parcours-AZ900.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certifications Cloud – Accueil</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: "Segoe UI", system-ui, sans-serif;
+         background: radial-gradient(circle at top, #1b2a4a, #0b1020 70%); color: #e8ecf5;
+         display: flex; flex-direction: column; align-items: center; padding: 48px 20px; }
+  h1 { margin: 0 0 8px; font-size: 2rem; text-align: center; }
+  p.sub { margin: 0 0 40px; color: #9aa6c0; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 24px; width: 100%; max-width: 860px; }
+  a.card { display: block; text-decoration: none; color: inherit; padding: 28px;
+           border-radius: 16px; background: #141c33; border: 1px solid #26324f;
+           transition: transform .15s, border-color .15s, box-shadow .15s; }
+  a.card:hover, a.card:focus-visible { transform: translateY(-4px); outline: none; }
+  a.aws:hover, a.aws:focus-visible { border-color: #ff9900; box-shadow: 0 8px 30px rgba(255,153,0,.2); }
+  a.az:hover, a.az:focus-visible { border-color: #0089d6; box-shadow: 0 8px 30px rgba(0,137,214,.25); }
+  .tag { display: inline-block; font-size: .75rem; font-weight: 600; padding: 4px 10px;
+         border-radius: 999px; margin-bottom: 14px; }
+  .aws .tag { background: rgba(255,153,0,.15); color: #ffb84d; }
+  .az .tag { background: rgba(0,137,214,.18); color: #5cbcf5; }
+  .icon { font-size: 2.4rem; }
+  h2 { margin: 10px 0 8px; font-size: 1.3rem; }
+  .card p { margin: 0 0 18px; color: #aab4cc; line-height: 1.5; }
+  .go { font-weight: 600; }
+  .aws .go { color: #ffb84d; } .az .go { color: #5cbcf5; }
+  footer { margin-top: 48px; font-size: .8rem; color: #6b7690; text-align: center; }
+</style>
 </head>
 <body>
-<p><a href="Azure-3D-Parcours-AZ900.html">Azure 3D - Parcours AZ-900</a></p>
+  <h1>Préparation aux certifications Cloud</h1>
+  <p class="sub">Choisissez un parcours</p>
+  <div class="grid">
+    <a class="card aws" href="Quiz-AWS-Cloud-Practitioner-FR.html">
+      <span class="tag">AWS · CLF-C02</span>
+      <div class="icon">📝</div>
+      <h2>Quiz AWS Cloud Practitioner</h2>
+      <p>Examens blancs traduits en français, avec corrigés et suivi de progression.</p>
+      <span class="go">Commencer le quiz →</span>
+    </a>
+    <a class="card az" href="Azure-3D-Parcours-AZ900.html">
+      <span class="tag">Microsoft · AZ-900</span>
+      <div class="icon">🧊</div>
+      <h2>Azure 3D – Parcours AZ-900</h2>
+      <p>Exploration interactive en 3D de la hiérarchie et des concepts Azure Fundamentals.</p>
+      <span class="go">Explorer le parcours →</span>
+    </a>
+  </div>
+  <footer>Ressources d'apprentissage non officielles – non affiliées à Amazon Web Services ni à Microsoft.</footer>
 </body>
 </html>
